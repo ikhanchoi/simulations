@@ -1,5 +1,18 @@
 # Numerical ODEs
 
+Euler
+Runge-Kutta
+Multi-step
+	Adams-Bashforth, Adams-Moulton
+
+경계값
+shooting, fdm, 
+
+
+Stiff solver
+Backward Euler, Implicit Runge-Kutta
+
+
 # Numerical linear algebra
 
 tridiagonal
@@ -7,6 +20,8 @@ tridiagonal
 ## iterative method
 Stationary iterative methods
 Krylov subspace method
+
+
 
 # Numerical PDEs
 For each equation, we want to introduce several schemes.

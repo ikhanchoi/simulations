@@ -2,7 +2,12 @@
 
 # Class design
 
-rendering system, animation system, physics system, audio system, input system
+rendering system
+animation system
+physics system
+audio system
+input system
+
 
 
 
@@ -22,13 +27,11 @@ a primitive -> vertex attribute object
 initial imgui parameters
 
 initial camera matrices
+
 initial lighting parameters
 
 
 
-
-program, vao, camera uniforms, lighting uniforms
-렌더 컴포넌트
 
 ## Loop
 
@@ -67,7 +70,7 @@ system: 특정 종류의 component들의 리스트를 들고 있어, 다른 comp
 
 render system: model/effect/camera/light component들의 리스트를 들고 있어서, camera와 light 정보를 보고받고, model이나 effect의 draw 메소드를 호출하는 클래스.
 
-model: gltf파일 하나를 가지고 camera와 light 정보를 인자로 받아, 화면에 이미지를 출력하는 draw 메소드를 가지는 컴포넌트. render system에 보고할 정보는 없다. model/effect 컴포넌트가 다른 종류의 컴포넌트와 다른 한 가지는 update 메소드 대신 draw 메소드를 가진다는 것.
+model: gltf파일 하나를 가지고 camera와 light 정보를 인자로 받아, 화면에 이미지를 출력하는 draw 메소드를 가지는 컴포넌트. render system에 보고할 정보는 없다. model/effect 컴포넌트가 다른 종류의 컴포넌트와 다른 한 가지는 update 메소드 대신 draw 메소드를 가진다는 것. (draw method? really?)
 
 submesh: (말단 노드에 대응) vao를 최대 하나 가진다. 포맷/레이아웃이 똑같은 여러 mesh의 경우 하나의 vao에 넣는 것이 좋지만 그런 경우 처음부터 그렇게 모델링이 되었다고 가정해서 submesh와 vao를 일대일대응시키자.
 
